@@ -912,6 +912,7 @@ view: ytcdemographic {
 
   parameter: significance_dropdown {
     label: "Significance"
+    hidden: yes
     description: "Choose Significance for crosstabs"
     type: string
     allowed_value: {
@@ -936,6 +937,7 @@ view: ytcdemographic {
   parameter: confidence_interval {
     label: "Confidence Interval Parameter"
     description: "Choose Confidence % for crosstabs"
+    hidden: yes
     type: string
     allowed_value: {
       label: "85%"

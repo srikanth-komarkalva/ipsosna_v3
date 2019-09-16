@@ -292,6 +292,14 @@ view: ytcvariable_fact {
     sql: ${TABLE}.Unique_ID ;;
   }
 
+  measure: unwtct {
+    group_label: "Weight Metrics"
+    description: "The count of respondents"
+    label: "Unweighted Count"
+    type: count_distinct
+    sql: ${unique_id} ;;
+  }
+
   measure: count {
     group_label: "Question Information"
     hidden: yes
