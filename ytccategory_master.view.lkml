@@ -4,6 +4,7 @@ view: ytccategory_master {
   dimension: category_id {
     group_label: "Question Information"
     primary_key: yes
+    hidden: yes
     label: "Brand"
     order_by_field: catorder
     type: string

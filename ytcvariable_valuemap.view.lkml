@@ -241,6 +241,7 @@ view: ytcvariable_valuemap {
   dimension: variable_id {
     group_label: "Question Information"
     label: "Variable ID"
+    hidden: yes
     type: string
     sql: ${TABLE}.VariableID ;;
   }
