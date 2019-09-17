@@ -1,6 +1,96 @@
 view: ytcdemographic_2 {
   sql_table_name: YouTubeConsumer.YTCDemographic ;;
 
+#Defining parameters for Dynamic column selection in Cross tab charts
+  parameter: attribute_selector1 {
+    label: "Banner Selector 1"
+    description: "Banner selector for crosstabs"
+    type: unquoted
+
+    allowed_value: {
+      label: "Country"
+      value: "country10"
+    }
+    allowed_value: {
+      label: "Wave"
+      value: "wave_new"
+    }
+    allowed_value: {
+      label: "Age Quota"
+      value: "age_quota"
+    }
+    allowed_value: {
+      label: "Gender"
+      value: "quota_gender"
+    }
+    allowed_value: {
+      label: "Creator Min"
+      value: "creatormin"
+    }
+    allowed_value: {
+      label: "Favorite"
+      value: "c_favorite"
+    }
+    allowed_value: {
+      label: "Employee Type"
+      value: "emp01"
+    }
+  }
+
+  parameter: attribute_selector2 {
+    description: "Banner selector for crosstabs"
+    label: "Banner Selector 2"
+    type: unquoted
+
+    allowed_value: {
+      label: "Country"
+      value: "country10"
+    }
+    allowed_value: {
+      label: "Wave"
+      value: "wave_new"
+    }
+    allowed_value: {
+      label: "Age Quota"
+      value: "age_quota"
+    }
+    allowed_value: {
+      label: "Gender"
+      value: "quota_gender"
+    }
+    allowed_value: {
+      label: "Creator Min"
+      value: "creatormin"
+    }
+    allowed_value: {
+      label: "Favorite"
+      value: "c_favorite"
+    }
+    allowed_value: {
+      label: "Employee Type"
+      value: "emp01"
+    }
+  }
+
+  dimension: attribute_selector1_dim {
+    group_label: "Banner Analysis"
+    label: "Banner Selector 1"
+#     order_by_field: attribute_selector1_sort
+    description: "To be used with the Banner Selector filters"
+    label_from_parameter: attribute_selector1
+    sql: ${TABLE}.{% parameter attribute_selector1 %};;
+  }
+
+  dimension: attribute_selector2_dim {
+    group_label: "Banner Analysis"
+    label: "Banner Selector 2"
+#     order_by_field: attribute_selector2_sort
+    description: "To be used with the Banner Selector filters"
+    label_from_parameter: attribute_selector2
+    sql: ${TABLE}.{% parameter attribute_selector2 %};;
+  }
+
+
   dimension: age_quota {
     group_label: "Demographic Fields"
     type: string
@@ -966,6 +1056,4 @@ view: ytcdemographic_2 {
     type: string
     sql:  {% parameter confidence_interval  %};;
   }
-
-
 }

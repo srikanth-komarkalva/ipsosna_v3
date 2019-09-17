@@ -399,6 +399,7 @@ view: ytcdemographic {
 
   dimension: country10 {
     group_label: "Demographic Fields"
+    label: "Country"
     type: string
     sql: ${TABLE}.COUNTRY10 ;;
   }
