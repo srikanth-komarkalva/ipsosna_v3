@@ -816,7 +816,7 @@ view: ytcdemographic_2 {
 
           -- all variable eav fields
               {% if ytcvariable_eav.variable_id._is_selected %} ${ytcvariable_eav.variable_id} , {% endif %}
-              {% if ytcvariable_eav.category_id._is_selected %} ${ytcvariable_eav.category_id} , {% endif %}
+             {% if ytcvariable_eav.category_id._is_selected %} ${ytcvariable_eav.category_id} , {% endif %}
 
           -- all variable master fields
               {% if ytcvariable_master.variable_label._is_selected %} ${ytcvariable_master.variable_label} , {% endif %}

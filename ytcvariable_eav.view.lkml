@@ -16,6 +16,7 @@ view: ytcvariable_eav {
 
   dimension: unique_id {
     hidden: yes
+    primary_key: yes
     type: number
     sql: ${TABLE}.Unique_ID ;;
   }
@@ -31,7 +32,7 @@ view: ytcvariable_eav {
   dimension: variable_id {
     label: "Variable Id"
     group_label: "Question Information"
-    primary_key: yes
+#     primary_key: yes
     type: string
     sql: ${TABLE}.VariableID ;;
   }
