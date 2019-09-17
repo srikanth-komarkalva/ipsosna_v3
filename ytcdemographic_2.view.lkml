@@ -25,7 +25,7 @@ view: ytcdemographic_2 {
     }
     allowed_value: {
       label: "Creator Min"
-      value: "creatormin"
+      value: "c_creatormin"
     }
     allowed_value: {
       label: "Favorite"
@@ -60,7 +60,7 @@ view: ytcdemographic_2 {
     }
     allowed_value: {
       label: "Creator Min"
-      value: "creatormin"
+      value: "c_creatormin"
     }
     allowed_value: {
       label: "Favorite"
@@ -912,6 +912,63 @@ view: ytcdemographic_2 {
               {% if ytcvariable_master.variable_label._is_selected %} ${ytcvariable_master.variable_label} , {% endif %}
 
           -- all demographic fields
+              {% if attribute_selector1._parameter_value == 'country10' and attribute_selector1_dim._is_selected %}
+                      ${country10} ,
+              {% elsif attribute_selector2._parameter_value == 'country10' and attribute_selector2_dim._is_selected %}
+                      ${country10} ,
+              {% elsif country10._is_selected %}
+                      ${country10} ,
+              {% endif %}
+
+              {% if attribute_selector1._parameter_value == 'wave_new' and attribute_selector1_dim._is_selected %}
+                      ${wave_new} ,
+              {% elsif attribute_selector2._parameter_value == 'wave_new' and attribute_selector2_dim._is_selected %}
+                      ${wave_new} ,
+              {% elsif wave_new._is_selected %}
+                      ${wave_new} ,
+              {% endif %}
+
+              {% if attribute_selector1._parameter_value == 'age_quota' and attribute_selector1_dim._is_selected %}
+                      ${age_quota} ,
+              {% elsif attribute_selector2._parameter_value == 'age_quota' and attribute_selector2_dim._is_selected %}
+                      ${age_quota} ,
+              {% elsif age_quota._is_selected %}
+                      ${age_quota} ,
+              {% endif %}
+
+              {% if attribute_selector1._parameter_value == 'quota_gender' and attribute_selector1_dim._is_selected %}
+                      ${quota_gender} ,
+              {% elsif attribute_selector2._parameter_value == 'quota_gender' and attribute_selector2_dim._is_selected %}
+                      ${quota_gender} ,
+              {% elsif quota_gender._is_selected %}
+                      ${quota_gender} ,
+              {% endif %}
+
+              {% if attribute_selector1._parameter_value == 'c_creatormin' and attribute_selector1_dim._is_selected %}
+                      ${c_creatormin} ,
+              {% elsif attribute_selector2._parameter_value == 'c_creatormin' and attribute_selector2_dim._is_selected %}
+                      ${c_creatormin} ,
+              {% elsif c_creatormin._is_selected %}
+                      ${c_creatormin} ,
+              {% endif %}
+
+              {% if attribute_selector1._parameter_value == 'c_favorite' and attribute_selector1_dim._is_selected %}
+                      ${c_favorite} ,
+              {% elsif attribute_selector2._parameter_value == 'c_favorite' and attribute_selector2_dim._is_selected %}
+                      ${c_favorite} ,
+              {% elsif c_favorite._is_selected %}
+                      ${c_favorite} ,
+              {% endif %}
+
+              {% if attribute_selector1._parameter_value == 'emp01' and attribute_selector1_dim._is_selected %}
+                      ${emp01} ,
+              {% elsif attribute_selector2._parameter_value == 'emp01' and attribute_selector2_dim._is_selected %}
+                      ${emp01} ,
+              {% elsif emp01._is_selected %}
+                      ${emp01} ,
+              {% endif %}
+
+
               {% if age_quota._is_selected %} ${age_quota} , {% endif %}
               {% if aus01_edu._is_selected %} ${aus01_edu} , {% endif %}
               {% if aus01_inc._is_selected %} ${aus01_inc} , {% endif %}
