@@ -43,7 +43,7 @@ explore: ytcvariable_eav {
   label: "YouTube Consumer Crosstab"
   view_name: ytcvariable_eav
   view_label: "YouTube Consumer Crosstab"
-#   sql_always_where: ${value} is not "Not Asked";;
+  sql_always_where: ${value} is not null;;
 
   join: ytcdemographic_2 {
     view_label: "YouTube Consumer Crosstab"
