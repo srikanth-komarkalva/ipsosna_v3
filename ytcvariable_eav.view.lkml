@@ -3,6 +3,7 @@ view: ytcvariable_eav {
 
   dimension: category_id {
     label: "Brand"
+    hidden: yes
     group_label: "Question Information"
     type: string
     sql: ${TABLE}.CategoryID ;;

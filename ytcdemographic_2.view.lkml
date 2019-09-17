@@ -1078,6 +1078,7 @@ view: ytcdemographic_2 {
   dimension: significance_dropdown_dim {
 #     hidden: yes
     label: "Significance"
+    group_label: "Parameters"
     type: string
     sql: {% parameter significance_dropdown  %};;
     #
@@ -1109,6 +1110,7 @@ view: ytcdemographic_2 {
   #Confidence Interval Filter
   dimension: confidence_interval_dim {
     label: "Confidence Interval"
+    group_label: "Parameters"
 #     hidden: yes
     type: string
     sql:  {% parameter confidence_interval  %};;
