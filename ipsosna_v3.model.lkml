@@ -45,11 +45,11 @@ explore: ytcvariable_eav {
   view_label: "YouTube Consumer Crosstab"
 #   sql_always_where: ${value} is not "Not Asked";;
 
-  join: ytcdemographic {
+  join: ytcdemographic_2 {
     view_label: "YouTube Consumer Crosstab"
     type: inner
     relationship: many_to_one
-    sql_on: ${ytcvariable_eav.unique_id} = ${ytcdemographic.unique_id};;
+    sql_on: ${ytcvariable_eav.unique_id} = ${ytcdemographic_2.unique_id};;
   }
 
   join: ytcvariable_master {

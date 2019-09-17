@@ -10,7 +10,7 @@ view: ytccategory_map {
   dimension: string_field_1 {
 #    hidden: yes
     label: "Variable ID"
-#     hidden: yes
+    hidden: yes
     group_label: "Question Information"
     type: string
     sql: ${TABLE}.string_field_1 ;;

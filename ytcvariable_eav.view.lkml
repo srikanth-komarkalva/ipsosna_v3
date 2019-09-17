@@ -2,7 +2,8 @@ view: ytcvariable_eav {
   sql_table_name: YouTubeConsumer.YTCVariableEav ;;
 
   dimension: category_id {
-    hidden: yes
+    label: "Brand"
+    group_label: "Question Information"
     type: string
     sql: ${TABLE}.CategoryID ;;
   }
@@ -20,13 +21,16 @@ view: ytcvariable_eav {
   }
 
   dimension: value {
-    hidden: yes
+#     hidden: yes
+    label: "Value"
+    group_label: "Question Information"
     type: string
     sql: ${TABLE}.Value ;;
   }
 
   dimension: variable_id {
-    hidden: yes
+    label: "Variable Id"
+    group_label: "Question Information"
     primary_key: yes
     type: string
     sql: ${TABLE}.VariableID ;;

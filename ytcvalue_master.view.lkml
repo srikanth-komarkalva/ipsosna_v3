@@ -18,6 +18,7 @@ view: ytcvalue_master {
   dimension: string_field_2 {
     hidden: yes
     label: "Value"
+    group_label: "Question Information"
     type: string
     sql: ${TABLE}.string_field_2 ;;
   }

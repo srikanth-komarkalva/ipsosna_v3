@@ -4,6 +4,7 @@ view: ytcvariable_master {
   dimension: variable_id {
     group_label: "Question Information"
     type: string
+    hidden: yes
     label: "Variable Id"
     primary_key: yes
     order_by_field: varorder
@@ -12,6 +13,7 @@ view: ytcvariable_master {
 
   dimension: variable_label {
     group_label: "Question Information"
+#     hidden: yes
     label: "Variable Label"
     type: string
     sql: ${TABLE}.VariableLabel ;;
