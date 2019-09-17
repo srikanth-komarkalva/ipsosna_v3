@@ -289,6 +289,7 @@ view: ytcvariable_fact {
   dimension: unique_id {
     group_label: "Question Information"
 #     primary_key: yes
+    hidden: yes
     type: number
     sql: ${TABLE}.Unique_ID ;;
   }
