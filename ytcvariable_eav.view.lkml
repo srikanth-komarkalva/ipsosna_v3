@@ -39,6 +39,14 @@ view: ytcvariable_eav {
     sql: ${TABLE}.VariableID ;;
   }
 
+  measure: unwtct {
+    group_label: "Weight Metrics"
+    description: "The count of respondents"
+    label: "Unweighted Count"
+    type: count_distinct
+    sql: ${unique_id} ;;
+  }
+
   measure: count {
     hidden: yes
     type: count
