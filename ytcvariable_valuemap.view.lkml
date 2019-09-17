@@ -241,7 +241,7 @@ view: ytcvariable_valuemap {
   dimension: variable_id {
     group_label: "Question Information"
     label: "Variable ID"
-#     hidden: yes
+    hidden: yes
     type: string
     sql: ${TABLE}.VariableID ;;
   }
@@ -257,12 +257,14 @@ view: ytcvariable_valuemap {
   dimension: variable_label {
     group_label: "Question Information"
     label: "Variable Label"
+    hidden: yes
     type: string
     sql: ${TABLE}.VariableLabel ;;
   }
 
   dimension: question {
     group_label: "Question Information"
+    hidden: yes
     description: "Concatenation of Variable ID and Variable Label"
     type: string
     sql: concat(${variable_id},' ',${variable_label}) ;;

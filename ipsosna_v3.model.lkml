@@ -30,11 +30,11 @@ explore: ytcvariable_fact {
     sql_on: ${ytcvariable_fact.category_id} = ${ytccategory_map.string_field_2};;
   }
 
-  join: ytcvariable_valuemap {
-    view_label: "YouTube Consumer for Users"
-    type: inner
-    relationship: many_to_one
-    sql_on: ${ytcvariable_fact.category_id} = ${ytcvariable_valuemap.category_id};;
-  }
+#   join: ytcvariable_valuemap {
+#     view_label: "YouTube Consumer for Users"
+#     type: inner
+#     relationship: many_to_one
+#     sql_on: ${ytcvariable_fact.category_id} = ${ytcvariable_valuemap.category_id};;
+#   }
 
 }

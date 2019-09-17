@@ -12,6 +12,7 @@ view: ytccategory_master {
 
   dimension: category_label {
     group_label: "Question Information"
+    label: "Brand Label"
     type: string
     sql: ${TABLE}.CategoryLabel ;;
   }
