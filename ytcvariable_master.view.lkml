@@ -2,15 +2,17 @@ view: ytcvariable_master {
   sql_table_name: YouTubeConsumer.YTCVariableMaster ;;
 
   dimension: variable_id {
-    hidden: yes
     group_label: "Question Information"
     type: string
+    label: "Variable Id"
+    primary_key: yes
+    order_by_field: varorder
     sql: ${TABLE}.VariableId ;;
   }
 
   dimension: variable_label {
     group_label: "Question Information"
-    hidden: yes
+    label: "Variable Label"
     type: string
     sql: ${TABLE}.VariableLabel ;;
   }

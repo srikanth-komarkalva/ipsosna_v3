@@ -9,6 +9,7 @@ view: ytcvalue_master {
 
   dimension: string_field_1 {
     hidden: yes
+    label: "Variable ID"
     primary_key: yes
     type: string
     sql: ${TABLE}.string_field_1 ;;
@@ -16,6 +17,7 @@ view: ytcvalue_master {
 
   dimension: string_field_2 {
     hidden: yes
+    label: "Value"
     type: string
     sql: ${TABLE}.string_field_2 ;;
   }

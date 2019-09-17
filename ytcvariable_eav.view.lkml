@@ -27,6 +27,7 @@ view: ytcvariable_eav {
 
   dimension: variable_id {
     hidden: yes
+    primary_key: yes
     type: string
     sql: ${TABLE}.VariableID ;;
   }
