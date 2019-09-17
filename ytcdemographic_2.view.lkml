@@ -1061,7 +1061,7 @@ view: ytcdemographic_2 {
 
   parameter: significance_dropdown {
     label: "Significance"
-    hidden: yes
+#     hidden: yes
     description: "Choose Significance for crosstabs"
     type: string
     allowed_value: {
@@ -1076,7 +1076,7 @@ view: ytcdemographic_2 {
 
   #Significance Filter
   dimension: significance_dropdown_dim {
-    hidden: yes
+#     hidden: yes
     label: "Significance"
     type: string
     sql: {% parameter significance_dropdown  %};;
@@ -1086,7 +1086,7 @@ view: ytcdemographic_2 {
   parameter: confidence_interval {
     label: "Confidence Interval Parameter"
     description: "Choose Confidence % for crosstabs"
-    hidden: yes
+#     hidden: yes
     type: string
     allowed_value: {
       label: "85%"
@@ -1109,7 +1109,7 @@ view: ytcdemographic_2 {
   #Confidence Interval Filter
   dimension: confidence_interval_dim {
     label: "Confidence Interval"
-    hidden: yes
+#     hidden: yes
     type: string
     sql:  {% parameter confidence_interval  %};;
   }
