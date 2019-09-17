@@ -815,9 +815,9 @@ view: ytcdemographic {
         {% if ytccategory_master.category_label._is_selected %} ${ytccategory_master.category_label} , {% endif %}
 
     -- all variable value map fields
-        {% if ytcvariable_valuemap.variable_id._is_selected %} ${ytcvariable_valuemap.variable_id} , {% endif %}
-        {% if ytcvariable_valuemap.variable_label._is_selected %} ${ytcvariable_valuemap.variable_label} , {% endif %}
-        {% if ytcvariable_valuemap.question._is_selected %} ${ytcvariable_valuemap.question} , {% endif %}
+    --    {% if ytcvariable_valuemap.variable_id._is_selected %} ${ytcvariable_valuemap.variable_id} , {% endif %}
+    --    {% if ytcvariable_valuemap.variable_label._is_selected %} ${ytcvariable_valuemap.variable_label} , {% endif %}
+    --    {% if ytcvariable_valuemap.question._is_selected %} ${ytcvariable_valuemap.question} , {% endif %}
 
     -- all demographic fields
         {% if age_quota._is_selected %} ${age_quota} , {% endif %}

@@ -1,226 +1,226 @@
 view: ytcvariable_valuemap {
   derived_table: {
-    sql: SELECT DISTINCT C_ADVOCACY AS Value, "C_ADVOCACY" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_ADVOCACY") as VariableLabel
+    sql: SELECT DISTINCT "C_ADVOCACY" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_ADVOCACY"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_FAM AS Value, "C_FAM" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_FAM") as VariableLabel
+      SELECT DISTINCT "C_FAM" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_FAM"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_FREQ AS Value, "C_FREQ" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_FREQ") as VariableLabel
+      SELECT DISTINCT "C_FREQ" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_FREQ"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_FAVORABILITY AS Value, "C_FAVORABILITY" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_FAVORABILITY") as VariableLabel
+      SELECT DISTINCT "C_FAVORABILITY" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_FAVORABILITY"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_TRUST AS Value, "C_TRUST" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_TRUST") as VariableLabel
+      SELECT DISTINCT "C_TRUST" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_TRUST"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_DTRTYT AS Value, "C_DTRTYT" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTYT") as VariableLabel
+      SELECT DISTINCT "C_DTRTYT" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTYT"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_DTRTFB AS Value, "C_DTRTFB" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTFB") as VariableLabel
+      SELECT DISTINCT "C_DTRTFB" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTFB"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_DTRTTW AS Value, "C_DTRTTW" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTTW") as VariableLabel
+      SELECT DISTINCT "C_DTRTTW" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTTW"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_DTRTIN AS Value, "C_DTRTIN" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTIN") as VariableLabel
+      SELECT DISTINCT "C_DTRTIN" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTIN"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_DTRTAZ AS Value, "C_DTRTAZ" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTAZ") as VariableLabel
+      SELECT DISTINCT "C_DTRTAZ" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTAZ"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_DTRTNF AS Value, "C_DTRTNF" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTNF") as VariableLabel
+      SELECT DISTINCT "C_DTRTNF" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTNF"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_DTRTSP AS Value, "C_DTRTSP" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTSP") as VariableLabel
+      SELECT DISTINCT "C_DTRTSP" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTSP"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_DTRTAP AS Value, "C_DTRTAP" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTAP") as VariableLabel
+      SELECT DISTINCT "C_DTRTAP" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTAP"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_DTRTSC AS Value, "C_DTRTSC" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTSC") as VariableLabel
+      SELECT DISTINCT "C_DTRTSC" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTSC"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_DTRTTT AS Value, "C_DTRTTT" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTTT") as VariableLabel
+      SELECT DISTINCT "C_DTRTTT" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTTT"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_DTRTLN AS Value, "C_DTRTLN" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTLN") as VariableLabel
+      SELECT DISTINCT "C_DTRTLN" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_DTRTLN"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_POSCON AS Value, "C_POSCON" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_POSCON") as VariableLabel
+      SELECT DISTINCT "C_POSCON" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_POSCON"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_APPEALS AS Value, "S_APPEALS" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_APPEALS") as VariableLabel
+      SELECT DISTINCT "S_APPEALS" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_APPEALS"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_CONTENT AS Value, "S_CONTENT" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_CONTENT") as VariableLabel
+      SELECT DISTINCT "S_CONTENT" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_CONTENT"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_DISCOVER AS Value, "S_DISCOVER" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_DISCOVER") as VariableLabel
+      SELECT DISTINCT "S_DISCOVER" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_DISCOVER"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_FUN AS Value, "S_FUN" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_FUN") as VariableLabel
+      SELECT DISTINCT "S_FUN" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_FUN"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_BELONG AS Value, "S_BELONG" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_BELONG") as VariableLabel
+      SELECT DISTINCT "S_BELONG" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_BELONG"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_PERSPECTVE AS Value, "S_PERSPECTVE" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_PERSPECTVE") as VariableLabel
+      SELECT DISTINCT "S_PERSPECTVE" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_PERSPECTVE"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_TRUST AS Value, "S_TRUST" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_TRUST") as VariableLabel
+      SELECT DISTINCT "S_TRUST" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_TRUST"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_EXPLORE AS Value, "S_EXPLORE" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_EXPLORE") as VariableLabel
+      SELECT DISTINCT "S_EXPLORE" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_EXPLORE"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_LEARN AS Value, "S_LEARN" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_LEARN") as VariableLabel
+      SELECT DISTINCT "S_LEARN" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_LEARN"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_SOCIAL AS Value, "S_SOCIAL" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_SOCIAL") as VariableLabel
+      SELECT DISTINCT "S_SOCIAL" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_SOCIAL"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_VOICE AS Value, "S_VOICE" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_VOICE") as VariableLabel
+      SELECT DISTINCT "S_VOICE" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_VOICE"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_USERS AS Value, "S_USERS" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_USERS") as VariableLabel
+      SELECT DISTINCT "S_USERS" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_USERS"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_SAFE AS Value, "S_SAFE" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_SAFE") as VariableLabel
+      SELECT DISTINCT "S_SAFE" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_SAFE"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_RESPONSIBLE AS Value, "S_RESPONSIBLE" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_RESPONSIBLE") as VariableLabel
+      SELECT DISTINCT "S_RESPONSIBLE" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_RESPONSIBLE"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_TRANSPARENT AS Value, "S_TRANSPARENT" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_TRANSPARENT") as VariableLabel
+      SELECT DISTINCT "S_TRANSPARENT" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_TRANSPARENT"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_DISTURBING AS Value, "S_DISTURBING" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_DISTURBING") as VariableLabel
+      SELECT DISTINCT "S_DISTURBING" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_DISTURBING"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_BULLYING AS Value, "S_BULLYING" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_BULLYING") as VariableLabel
+      SELECT DISTINCT "S_BULLYING" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_BULLYING"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_INAPPORPRIATE AS Value, "S_INAPPORPRIATE" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_INAPPORPRIATE") as VariableLabel
+      SELECT DISTINCT "S_INAPPORPRIATE" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_INAPPORPRIATE"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_RECOMMEND AS Value, "S_RECOMMEND" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_RECOMMEND") as VariableLabel
+      SELECT DISTINCT "S_RECOMMEND" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_RECOMMEND"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_CREATORS AS Value, "S_CREATORS" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_CREATORS") as VariableLabel
+      SELECT DISTINCT "S_CREATORS" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_CREATORS"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_SUCCEED AS Value, "S_SUCCEED" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_SUCCEED") as VariableLabel
+      SELECT DISTINCT "S_SUCCEED" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_SUCCEED"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_PROMOTES AS Value, "S_PROMOTES" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_PROMOTES") as VariableLabel
+      SELECT DISTINCT "S_PROMOTES" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_PROMOTES"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_HONEST AS Value, "S_HONEST" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_HONEST") as VariableLabel
+      SELECT DISTINCT "S_HONEST" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_HONEST"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_FAIRLY AS Value, "S_FAIRLY" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_FAIRLY") as VariableLabel
+      SELECT DISTINCT "S_FAIRLY" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_FAIRLY"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_MONEY AS Value, "S_MONEY" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_MONEY") as VariableLabel
+      SELECT DISTINCT "S_MONEY" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_MONEY"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT S_POLICIES AS Value, "S_POLICIES" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_POLICIES") as VariableLabel
+      SELECT DISTINCT "S_POLICIES" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "S_POLICIES"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_NEWS_HEARD AS Value, "C_NEWS_HEARD" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_NEWS_HEARD") as VariableLabel
+      SELECT DISTINCT "C_NEWS_HEARD" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_NEWS_HEARD"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
 
       UNION ALL
 
-      SELECT DISTINCT C_NEWS_SENTIMENT AS Value, "C_NEWS_SENTIMENT" AS VariableID, CategoryID, (SELECT DISTINCT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_NEWS_SENTIMENT") as VariableLabel
+      SELECT DISTINCT "C_NEWS_SENTIMENT" AS VariableID, CategoryID, (SELECT VariableLabel FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableMaster` where VariableID = "C_NEWS_SENTIMENT"LIMIT 1 ) as VariableLabel
       FROM `mgcp-1192365-ipsos-gbht-srf617.YouTubeConsumer.YTCVariableFact`
        ;;
   }
@@ -241,7 +241,7 @@ view: ytcvariable_valuemap {
   dimension: variable_id {
     group_label: "Question Information"
     label: "Variable ID"
-    hidden: yes
+#     hidden: yes
     type: string
     sql: ${TABLE}.VariableID ;;
   }

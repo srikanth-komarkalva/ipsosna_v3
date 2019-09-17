@@ -118,6 +118,7 @@ view: ytcvariable_fact {
   dimension: category_id {
     group_label: "Question Information"
     type: string
+    primary_key: yes
     hidden: yes
     sql: ${TABLE}.CategoryID ;;
   }
@@ -287,7 +288,7 @@ view: ytcvariable_fact {
 
   dimension: unique_id {
     group_label: "Question Information"
-    primary_key: yes
+#     primary_key: yes
     type: number
     sql: ${TABLE}.Unique_ID ;;
   }
