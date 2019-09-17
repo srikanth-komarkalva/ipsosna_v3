@@ -32,6 +32,7 @@ view: ytcvariable_eav {
   dimension: variable_id {
     label: "Variable Id"
     group_label: "Question Information"
+    hidden: yes
 #     primary_key: yes
     type: string
     sql: ${TABLE}.VariableID ;;
