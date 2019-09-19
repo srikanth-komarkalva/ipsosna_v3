@@ -893,7 +893,17 @@ view: ytcdemographic_2 {
     type: sum
     sql: ${weight} ;;
     value_format_name: decimal_2
-#   drill_fields: [country,region,wave,type_net,wtct,pct_wtct]
+#     drill_fields: [age_quota,c_favorite,country10,emp01,wave_new,wtct,percent_weight]
+    drill_fields: [detail*]
+    link: {
+      label: "YouTube Consumers Analysis Drill down"
+      url: "{{link}}&pivots=wave_new"
+      icon_url: "http://www.looker.com/favicon.ico"
+      }
+  }
+
+  set: detail {
+    fields: [age_quota,quota_ethnicity,emp01,wtct,ytcvariable_eav.unwtct]
   }
 
   measure: sum_wtct_subtotal {
