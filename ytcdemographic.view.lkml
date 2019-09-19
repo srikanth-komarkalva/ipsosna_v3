@@ -804,7 +804,7 @@ view: ytcdemographic {
     type: sum
     sql: ${weight} ;;
     value_format_name: decimal_2
-#   drill_fields: [country,region,wave,type_net,wtct,pct_wtct]
+    drill_fields: [age_quota,c_favorite,country10,emp01,wave_new,wtct,percent_weight]
   }
 
   measure: sum_wtct_subtotal {
