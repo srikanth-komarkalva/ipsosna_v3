@@ -1066,6 +1066,7 @@ view: ytcdemographic_2 {
     group_label: "Weight Metrics"
     label: "Percent of Base"
     sql: ${wtct}/${sum_wtct_subtotal} ;;
+    drill_fields: [detail*]
     value_format_name: percent_0
   }
 
