@@ -870,8 +870,20 @@ view: ytcdemographic_2 {
     group_label: "Demographic Fields"
     label: "Wave"
     type: string
+    order_by_field: wave_sort
     sql: ${TABLE}.WAVE_New ;;
   }
+
+  dimension: wave_sort {
+    group_label: "Demographic Fields"
+    type: number
+    hidden: yes
+    sql: case substr(${wave_new},1,7)
+      WHEN 'June-19' THEN 01
+      WHEN 'July-19' THEN 02
+    ;;
+  }
+
 
   dimension: weight {
     group_label: "Demographic Fields"
