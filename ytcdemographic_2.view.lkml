@@ -887,7 +887,7 @@ view: ytcdemographic_2 {
   dimension: attribute_selector1_sort {
     hidden: yes
     sql:
-    {% if attribute_selector1._parameter_value == 'wave' %}
+    {% if attribute_selector1._parameter_value == 'wave_new' %}
       ${wave_sort}
     {% else %}
       ${attribute_selector1_dim}
@@ -897,7 +897,7 @@ view: ytcdemographic_2 {
   dimension: attribute_selector2_sort {
     hidden: yes
     sql:
-    {% if attribute_selector2._parameter_value == 'wave' %}
+    {% if attribute_selector2._parameter_value == 'wave_new' %}
       ${wave_sort}
     {% else %}
       ${attribute_selector2_dim}
