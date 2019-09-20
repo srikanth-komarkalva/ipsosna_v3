@@ -90,6 +90,26 @@ view: ytcdemographic_2 {
     sql: ${TABLE}.{% parameter attribute_selector2 %};;
   }
 
+  dimension: attribute_selector1_sort {
+    hidden: yes
+    sql:
+    {% if attribute_selector1._parameter_value == 'wave_new' %}
+      ${wave_date}
+    {% else %}
+      ${attribute_selector1_dim}
+    {% endif %};;
+  }
+
+  dimension: attribute_selector2_sort {
+    hidden: yes
+    sql:
+    {% if attribute_selector2._parameter_value == 'wave_new' %}
+      ${wave_date}
+    {% else %}
+      ${attribute_selector2_dim}
+    {% endif %};;
+  }
+
 
   dimension: age_quota {
     group_label: "Demographic Fields"
@@ -870,39 +890,38 @@ view: ytcdemographic_2 {
     group_label: "Demographic Fields"
     label: "Wave"
     type: string
-    order_by_field: wave_sort
+#     order_by_field: wave_date
     sql: ${TABLE}.WAVE_New ;;
   }
 
-  dimension: wave_sort {
+##Converting Wave string to Date format
+  dimension: wave_month {
     group_label: "Demographic Fields"
     type: number
     hidden: yes
-    sql: case substr(${wave_new},1,4)
-      WHEN 'June' THEN 01
-      WHEN 'July' THEN 02
-      END;;
+    sql:  case substr(${wave_new},2,4)
+          WHEN 'June' THEN 06
+          WHEN 'July' THEN 07
+          END;;
   }
 
-  dimension: attribute_selector1_sort {
+  dimension: wave_year {
+    group_label: "Demographic Fields"
+    type: number
     hidden: yes
-    sql:
-    {% if attribute_selector1._parameter_value == 'wave_new' %}
-      ${wave_sort}
-    {% else %}
-      ${attribute_selector1_dim}
-    {% endif %};;
+    sql: case substr(${wave_new},6,2)
+          WHEN '19' THEN 2019
+          WHEN '18' THEN 2018
+          END;;
   }
 
-  dimension: attribute_selector2_sort {
+  dimension: wave_date {
+    group_label: "Demographic Fields"
     hidden: yes
-    sql:
-    {% if attribute_selector2._parameter_value == 'wave_new' %}
-      ${wave_sort}
-    {% else %}
-      ${attribute_selector2_dim}
-    {% endif %};;
+    type: date
+    sql: date(2019,${wave_month},1) ;;
   }
+
 
   dimension: weight {
     group_label: "Demographic Fields"
