@@ -909,7 +909,7 @@ view: ytcdemographic_2 {
     group_label: "Demographic Fields"
     type: number
     hidden: yes
-    sql: case substr(${wave_new},6,2)
+    sql: case substr(${wave_new},7,2)
           WHEN '19' THEN 2019
           WHEN '18' THEN 2018
           END;;
@@ -919,7 +919,7 @@ view: ytcdemographic_2 {
     group_label: "Demographic Fields"
     hidden: yes
     type: date
-    sql: date(2019,${wave_month},1) ;;
+    sql: date(${wave_year},${wave_month},1) ;;
   }
 
 
