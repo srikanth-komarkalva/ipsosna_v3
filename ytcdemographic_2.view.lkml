@@ -75,7 +75,7 @@ view: ytcdemographic_2 {
   dimension: attribute_selector1_dim {
     group_label: "Banner Analysis"
     label: "Banner Selector 1"
-#     order_by_field: attribute_selector1_sort
+    order_by_field: attribute_selector1_sort
     description: "To be used with the Banner Selector filters"
     label_from_parameter: attribute_selector1
     sql: ${TABLE}.{% parameter attribute_selector1 %};;
@@ -84,7 +84,7 @@ view: ytcdemographic_2 {
   dimension: attribute_selector2_dim {
     group_label: "Banner Analysis"
     label: "Banner Selector 2"
-#     order_by_field: attribute_selector2_sort
+    order_by_field: attribute_selector2_sort
     description: "To be used with the Banner Selector filters"
     label_from_parameter: attribute_selector2
     sql: ${TABLE}.{% parameter attribute_selector2 %};;
@@ -884,6 +884,25 @@ view: ytcdemographic_2 {
     ;;
   }
 
+  dimension: attribute_selector1_sort {
+    hidden: yes
+    sql:
+    {% if attribute_selector1._parameter_value == 'wave' %}
+      ${wave_sort}
+    {% else %}
+      ${attribute_selector1_dim}
+    {% endif %};;
+  }
+
+  dimension: attribute_selector2_sort {
+    hidden: yes
+    sql:
+    {% if attribute_selector2._parameter_value == 'wave' %}
+      ${wave_sort}
+    {% else %}
+      ${attribute_selector2_dim}
+    {% endif %};;
+  }
 
   dimension: weight {
     group_label: "Demographic Fields"
