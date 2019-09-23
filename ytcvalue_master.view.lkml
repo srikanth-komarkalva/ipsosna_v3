@@ -7,21 +7,28 @@ view: ytcvalue_master {
     sql: ${TABLE}.int64_field_0 ;;
   }
 
-  dimension: string_field_1 {
+  dimension: variable_id {
     hidden: yes
     label: "Variable ID"
     primary_key: yes
     type: string
-    sql: ${TABLE}.string_field_1 ;;
+    sql: ${TABLE}.VariableID ;;
   }
 
-  dimension: string_field_2 {
+  dimension: value {
     hidden: yes
     label: "Value"
     group_label: "Question Information"
     type: string
-    sql: ${TABLE}.string_field_2 ;;
+    order_by_field: sort_order
+    sql: ${TABLE}.Value ;;
   }
+
+  dimension: sort_order {
+    type: number
+    sql: ${TABLE}.Sort_order ;;
+  }
+
 
   measure: count {
     hidden: yes

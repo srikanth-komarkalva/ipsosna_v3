@@ -63,7 +63,7 @@ explore: ytcvariable_eav {
     view_label: "YouTube Consumer Crosstab"
     type: inner
     relationship: many_to_one
-    sql_on: ${ytcvariable_eav.variable_id} = ${ytcvalue_master.string_field_1};;
+    sql_on: ${ytcvariable_eav.variable_id} = ${ytcvalue_master.variable_id};;
   }
 
   join: ytccategory_master {
