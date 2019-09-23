@@ -26,6 +26,15 @@ view: ytccategory_map {
     sql: ${TABLE}.string_field_2 ;;
   }
 
+  dimension: string_field_3 {
+    label: "Variable Label"
+    group_label: "Question Information"
+#     order_by_field: ytccategory_master.catorder
+    hidden: yes
+    type: string
+    sql: ${TABLE}.string_field_3 ;;
+  }
+
   measure: count {
     hidden: yes
     type: count

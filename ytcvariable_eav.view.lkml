@@ -27,6 +27,7 @@ view: ytcvariable_eav {
     label: "Value"
     group_label: "Question Information"
     type: string
+    order_by_field: ytcvalue_master.value
     sql: ${TABLE}.Value ;;
   }
 
@@ -42,6 +43,7 @@ view: ytcvariable_eav {
   dimension: value_net {
     group_label: "Question Information"
     label: "Net Value"
+#     order_by_field: ytcvalue_master.value
     drill_fields: [value,ytcdemographic_2.wtct,ytcdemographic_2.percent_weight]
     sql: case ${value}
 
