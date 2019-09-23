@@ -29,6 +29,7 @@ dimension: string_field_2 {
 dimension: string_field_3 {
   label: "Variable Label"
   group_label: "Question Information"
+  hidden: yes
 #     order_by_field: ytccategory_master.catorder
   type: string
   sql: ${TABLE}.string_field_3 ;;
