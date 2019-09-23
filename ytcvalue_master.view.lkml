@@ -25,6 +25,7 @@ view: ytcvalue_master {
   }
 
   dimension: sort_order {
+    hidden: yes
     type: number
     sql: ${TABLE}.Sort_order ;;
   }
