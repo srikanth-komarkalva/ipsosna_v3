@@ -23,7 +23,7 @@ view: ytcvariable_eav {
   }
 
   dimension: value {
-    hidden: yes
+#     hidden: yes
     label: "Value"
     group_label: "Question Information"
     type: string
