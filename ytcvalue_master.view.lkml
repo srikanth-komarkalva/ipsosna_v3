@@ -10,6 +10,7 @@ view: ytcvalue_master {
   dimension: variable_id {
     hidden: yes
     label: "Variable ID"
+    group_label: "Question Information"
     primary_key: yes
     type: string
     sql: ${TABLE}.VariableID ;;

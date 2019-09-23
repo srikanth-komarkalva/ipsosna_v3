@@ -13,7 +13,7 @@ view: ytcvariable_master {
 
   dimension: variable_label {
     group_label: "Question Information"
-    hidden: yes
+#     hidden: yes
     label: "Variable Label"
     type: string
     sql: ${TABLE}.VariableLabel ;;
