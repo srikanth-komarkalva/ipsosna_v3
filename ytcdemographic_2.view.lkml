@@ -963,11 +963,13 @@ view: ytcdemographic_2 {
           -- all category master fields
               {% if ytccategory_master.category_id._is_selected %} ${ytccategory_master.category_id} , {% endif %}
               {% if ytccategory_master.category_label._is_selected %} ${ytccategory_master.category_label} , {% endif %}
-
+          -- all category map fields
+              {% if ytccategory_map_2.string_field_1._is_selected %} ${ytccategory_map_2.string_field_1} , {% endif %}
           -- all variable eav fields
               {% if ytcvariable_eav.variable_id._is_selected %} ${ytcvariable_eav.variable_id} , {% endif %}
-             {% if ytcvariable_eav.category_id._is_selected %} ${ytcvariable_eav.category_id} , {% endif %}
-
+              {% if ytcvariable_eav.category_id._is_selected %} ${ytcvariable_eav.category_id} , {% endif %}
+          -- all value master eav fields
+              {% if ytcvalue_master.variable_id._is_selected %} ${ytcvalue_master.variable_id} , {% endif %}
           -- all variable master fields
               {% if ytcvariable_master.variable_label._is_selected %} ${ytcvariable_master.variable_label} , {% endif %}
 
@@ -1106,7 +1108,7 @@ view: ytcdemographic_2 {
               {% if usmar2._is_selected %} ${usmar2} , {% endif %}
               {% if usreth3._is_selected %} ${usreth3} , {% endif %}
               {% if wave_new._is_selected %} ${wave_new} , {% endif %}
-              {% if weight._is_selected %} ${weight} , {% endif %}
+            - {% if weight._is_selected %} ${weight} , {% endif %}
               1)
               ;;
   }

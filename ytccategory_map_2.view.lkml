@@ -8,7 +8,6 @@ view: ytccategory_map_2 {
   }
 
   dimension: string_field_1 {
-#    hidden: yes
   label: "Variable ID"
   hidden: yes
   group_label: "Question Information"
