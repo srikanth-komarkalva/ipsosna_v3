@@ -8,7 +8,7 @@ view: ytcvalue_master {
   }
 
   dimension: variable_id {
-#     hidden: yes
+    hidden: yes
     label: "Variable ID"
     group_label: "Question Information"
     primary_key: yes
@@ -17,7 +17,7 @@ view: ytcvalue_master {
   }
 
   dimension: value {
-#     hidden: yes
+    hidden: yes
     label: "Value"
     group_label: "Question Information"
     type: string
@@ -30,7 +30,6 @@ view: ytcvalue_master {
     type: number
     sql: ${TABLE}.Sort_order ;;
   }
-
 
   measure: count {
     hidden: yes

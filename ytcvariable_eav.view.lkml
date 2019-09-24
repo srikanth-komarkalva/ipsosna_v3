@@ -23,11 +23,11 @@ view: ytcvariable_eav {
   }
 
   dimension: value {
-    hidden: yes
+#     hidden: yes
     label: "Value"
     group_label: "Question Information"
     type: string
-    order_by_field: ytcvalue_master.value
+#     order_by_field: ytcvalue_master.sort_order
     sql: ${TABLE}.Value ;;
   }
 
