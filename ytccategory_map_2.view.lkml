@@ -8,7 +8,7 @@ view: ytccategory_map_2 {
   }
 
   dimension: string_field_1 {
-  label: "Variable ID"
+  label: "Variable ID cat map"
   hidden: yes
   group_label: "Question Information"
   type: string
