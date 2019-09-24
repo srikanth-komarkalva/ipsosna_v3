@@ -50,11 +50,11 @@ view: ytcvariable_eav {
           WHEN 'Agree strongly' THEN 'Top 2 Agree'
           WHEN 'Agree slightly' THEN 'Top 2 Agree'
           WHEN 'Disagree strongly' THEN 'Bottom 2 Agree'
-          WHEN 'Disagree slightly' THEN 'Bottom 2 Agree'
+          WHEN 'Neither agree nor disagree' THEN 'Bottom 2 Agree'
 
           WHEN 'Speak highly without being asked' THEN 'Top 2 Advocacy'
           WHEN 'Speak highly if someone asked me' THEN 'Top 2 Advocacy'
-          WHEN 'Critical without being asked' THEN 'Bottom 2 Advocacy'
+          WHEN 'Neither speak highly nor critical' THEN 'Bottom 2 Advocacy'
           WHEN 'Don’t know enough to have a strong opinion' THEN 'Bottom 2 Advocacy'
 
           WHEN 'Know very well' THEN 'Top 2 Familiar'
