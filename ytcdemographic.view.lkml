@@ -664,6 +664,7 @@ view: ytcdemographic {
 
   dimension: respondent_serial {
     group_label: "Demographic Fields"
+    hidden: yes
     type: number
     sql: ${TABLE}.Respondent_Serial ;;
   }
@@ -701,6 +702,7 @@ view: ytcdemographic {
   dimension: unique_id {
     group_label: "Demographic Fields"
     primary_key: yes
+    hidden: yes
     type: number
     sql: ${TABLE}.Unique_ID ;;
   }
